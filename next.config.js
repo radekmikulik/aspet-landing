@@ -2,9 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true },
-  // Klíčové: žádné `output: 'export'`
+  // necháme build projít i kdyby byly typové/ESLint chyby
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
+  // DŮLEŽITÉ: žádné `output: 'export'`!
 };
 
 module.exports = nextConfig;
