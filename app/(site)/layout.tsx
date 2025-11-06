@@ -1,16 +1,16 @@
+// app/(site)/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'ASPETi',
-  description: 'Aktuální nabídky – ASPETi',
+  description: 'Last-minute nabídky služeb a ubytování',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="cs">
-      <body className="min-h-screen bg-[#F5F7F6] text-[#0B1F2A] antialiased">
+      <body className="min-h-screen bg-[#F5F7F6] text-gray-900">
         {children}
       </body>
     </html>
